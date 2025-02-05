@@ -14,7 +14,9 @@ gem 'stimulus-rails',  '1.0.4'
 gem 'turbo-rails',     '1.1.1'
 
 group :development, :test do
-  gem 'debug',   '1.5.0', platforms: %i[mri mingw x64_mingw]
+  gem 'debug', '1.10.0', platforms: %i[mri mingw x64_mingw]
+  gem 'rubocop-capybara', '~> 2.21'
+  gem 'rubocop-rails', '~> 2.29'
   gem 'sqlite3', '1.5'
 end
 
@@ -36,5 +38,3 @@ end
 # Uncomment the following line if you're running Rails
 # on a native Windows system:
 # gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem 'rubocop', '~> 1.71'
